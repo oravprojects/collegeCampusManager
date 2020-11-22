@@ -1,0 +1,935 @@
+.App {
+  text-align: center;
+}
+
+.AppRight {
+  text-align: right;
+}
+
+#bgImage{
+  background-image: url("./background/snowCoveredMountain.jpg");
+  position: fixed;
+  min-width: 100%;
+  min-height: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+#nameField{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+td.MuiTableCell-root.MuiTableCell-body{
+  font-size: 1.25rem;
+}
+
+th.MuiTableCell-root.MuiTableCell-head{
+  font-size: 1.25rem;
+}
+
+.card {
+width: 40%;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+  /* background-color: DodgerBlue; */
+  /* background-color: #e5c0c0; */
+  width: 200px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  margin-left: -20px;
+  text-align: center;
+  line-height: 45px;
+  font-size: 20px;
+  justify-content: center;
+  border-radius: 10%;
+}
+
+thead {
+  font-size: 18px;
+}
+
+.myTable{
+  table-layout: auto;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+a.button3 {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin:0.5em 0.3em 0.3em 0.5em;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:#4eb5f1;
+  text-align:center;
+  transition: all 0.2s;
+  }
+  a.button3:hover{
+  background-color:#4095c6;
+  }
+  /* @media all and (max-width:30em){
+  a.button3{
+  display:block;
+  margin:0.2em auto;
+  }
+  } */
+button.btn.btn-primary3 {
+  display: inline-block;
+  padding: 0.3em 1.2em;
+  margin:0.5em 0.3em 0.3em 0.5em;
+  border-radius:2em;
+  box-sizing: border-box;
+  text-decoration:none;
+  font-family:'Roboto',sans-serif;
+  font-weight:300;
+  color:#FFFFFF;
+  background-color:#4eb5f1;
+  text-align:center;
+  transition: all 0.2s;
+  }
+  button.btn.btn-primary3:hover{
+  background-color:#4095c6;
+  color: navy;
+  
+  }
+  /* @media all and (max-width:30em){
+    button.btn.btn-primary3{
+  display:block;
+  margin:0.2em auto;
+  }
+  } */
+
+  #horizontal-scroll-except-first-column {
+    width: 100%;
+    overflow: auto;
+  }
+  
+  #horizontal-scroll-except-first-column > table {
+    margin-left: 8em;
+  }
+  
+  #horizontal-scroll-except-first-column > table > * > tr > th:first-child,
+  #horizontal-scroll-except-first-column > table > * > tr > td:first-child {
+    position: absolute;
+    width: 8em;
+    margin-left: -8em;
+    background: #ccc;
+  }
+  
+  #horizontal-scroll-except-first-column > table > * > tr > th,
+  #horizontal-scroll-except-first-column > table > * > tr > td {
+    /* Without this, if a cell wraps onto two lines, the first column
+     * will look bad, and may need padding. */
+    white-space: nowrap;
+  }
+
+  .navbar.sticky-top.navbar-expand-md.navbar-dark.bg-dark{
+    position: fixed;
+    width: 100%;
+    top: 0;
+  }
+  
+  .navbar.sticky-top.navbar-expand-md.navbar-dark.bg-dark li .active-link{
+    font-weight: bold;
+    color: white;
+  }
+
+
+  table.scheduleTable { 
+    width: 100%; 
+    border-collapse: collapse; 
+  }
+  /* Zebra striping */
+  tr:nth-of-type(odd).scheduleTable { 
+    background: #eee; 
+  }
+  th.scheduleTable { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+  }
+  td.scheduleTable, th.scheduleTable { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+  }
+  tr.scheduleTable, th.scheduleTable, td.scheduleTable { 
+    height: 80px; 
+  }
+  
+  table.lecScheduleTable { 
+    width: 100%; 
+    border-collapse: collapse; 
+  }
+  /* Zebra striping */
+  tr:nth-of-type(odd).lecScheduleTable { 
+    background: #eee; 
+  }
+  th.lecScheduleTable { 
+    background: #333; 
+    color: white; 
+    font-weight: bold; 
+  }
+  td.lecScheduleTable, th.lecScheduleTable { 
+    padding: 6px; 
+    border: 1px solid #ccc; 
+    text-align: left; 
+  }
+  tr.lecScheduleTable, th.lecScheduleTable, td.lecScheduleTable { 
+    height: 80px; 
+  }
+
+
+  div.userManWrapper{
+    overflow-y: scroll;
+    max-height: 500px;
+  }
+
+  @media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+  tr.scheduleTable, th.scheduleTable, td.scheduleTable { 
+    height: auto; 
+    
+  }
+  tr.scheduleTable{
+    width: 150%;
+  }
+  td.scheduleTable{
+    width: 50%;
+  }
+	/* Force table to not be like tables anymore */
+  table.scheduleTable, thead.scheduleTable, tbody.scheduleTable, th.scheduleTable, td.scheduleTable, 
+  tr.scheduleTable { 
+    display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead.scheduleTable tr.scheduleTable { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr.scheduleTable { border: 1px solid #ccc; }
+	
+	td.scheduleTable { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 55%; 
+	}
+	
+	td.scheduleTable:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td.scheduleTable:nth-of-type(1):before { content: "Course"; }
+	td.scheduleTable:nth-of-type(2):before { content: "Section"; }
+	td.scheduleTable:nth-of-type(3):before { content: "Hours"; }
+	td.scheduleTable:nth-of-type(4):before { content: "Course ID"; }
+	td.scheduleTable:nth-of-type(5):before { content: "First Name"; }
+  td.scheduleTable:nth-of-type(6):before { content: "Last Name"; }
+  
+
+  tr.lecScheduleTable, th.lecScheduleTable, td.lecScheduleTable { 
+    height: auto; 
+    
+  }
+  tr.lecScheduleTable{
+    width: 200%;
+  }
+  td.lecScheduleTable{
+    width: 50%;
+  }
+	/* Force table to not be like tables anymore */
+  table.lecScheduleTable, thead.lecScheduleTable, tbody.lecScheduleTable, th.lecScheduleTable, td.lecScheduleTable, 
+  tr.lecScheduleTable { 
+    display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead.lecScheduleTable tr.lecScheduleTable { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr.lecScheduleTable { border: 1px solid #ccc; }
+	
+	td.lecScheduleTable { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 55%; 
+	}
+	
+	td.lecScheduleTable:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td.lecScheduleTable:nth-of-type(1):before { content: "Course"; }
+	td.lecScheduleTable:nth-of-type(2):before { content: "Section"; }
+	td.lecScheduleTable:nth-of-type(3):before { content: "Flow ID"; }
+	td.lecScheduleTable:nth-of-type(4):before { content: "Hours"; }
+	td.lecScheduleTable:nth-of-type(5):before { content: "Course ID"; }
+	td.lecScheduleTable:nth-of-type(6):before { content: "Lec ID"; }
+	td.lecScheduleTable:nth-of-type(7):before { content: "First Name"; }
+  td.lecScheduleTable:nth-of-type(8):before { content: "Last Name"; }
+  
+  /* myMessageTableMobile */
+
+  tr.myMessageTableMobile, th.myMessageTableMobile, td.myMessageTableMobile { 
+    height: auto; 
+    
+  }
+  tr.myMessageTableMobile{
+    width: 100%;
+  }
+  td.myMessageTableMobile{
+    width: 100%;
+  }
+	/* Force table to not be like tables anymore */
+  table.myMessageTableMobile, thead.myMessageTableMobile, tbody.myMessageTableMobile, th.myMessageTableMobile, td.myMessageTableMobile, 
+  tr.myMessageTableMobile { 
+    display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead.myMessageTableMobile tr.myMessageTableMobile { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr.myMessageTableMobile { border: 1px solid #ccc; }
+	
+	td.myMessageTableMobile { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 55%; 
+	}
+	
+	td.myMessageTableMobile:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 0px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td.myMessageTableMobile:nth-of-type(1):before { content: "";}
+	td.myMessageTableMobile:nth-of-type(2):before { content: "Date"; }
+	td.myMessageTableMobile:nth-of-type(3):before { content: "Time"; }
+	td.myMessageTableMobile:nth-of-type(4):before { content: "User"; }
+	td.myMessageTableMobile:nth-of-type(5):before { content: "Room"; }
+	td.myMessageTableMobile:nth-of-type(6):before { content: "Message"; }
+
+  
+
+
+  /* AdminCourseTable */
+
+  tr.adminCourseTable, th.adminCourseTable, td.adminCourseTable { 
+    height: auto; 
+    
+  }
+  tr.adminCourseTable{
+    width: 100%;
+  }
+  td.adminCourseTable{
+    width: 100%;
+  }
+	/* Force table to not be like tables anymore */
+  table.adminCourseTable, thead.adminCourseTable, tbody.adminCourseTable, th.adminCourseTable, td.adminCourseTable, 
+  tr.adminCourseTable { 
+    display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead.adminCourseTable tr.adminCourseTable { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr.adminCourseTable { border: 1px solid #ccc; }
+	
+	td.adminCourseTable { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 55%; 
+	}
+	
+	td.adminCourseTable:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 0px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td.adminCourseTable:nth-of-type(1):before { content: "";}
+	td.adminCourseTable:nth-of-type(2):before { content: "Course"; }
+	td.adminCourseTable:nth-of-type(3):before { content: "Hours"; }
+	td.adminCourseTable:nth-of-type(4):before { content: "Id"; }
+  
+  
+  /* sectionTable */
+
+  tr.sectionTableMobile, th.sectionTableMobile, td.sectionTableMobile { 
+    height: auto; 
+    
+  }
+  tr.sectionTableMobile{
+    width: 100%;
+  }
+  td.sectionTableMobile{
+    width: 100%;
+  }
+	/* Force table to not be like tables anymore */
+  table.sectionTableMobile, thead.sectionTableMobile, tbody.sectionTableMobile, th.sectionTableMobile, td.sectionTableMobile, 
+  tr.sectionTableMobile { 
+    display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead.sectionTableMobile tr.sectionTableMobile { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr.sectionTableMobile { border: 1px solid #ccc; }
+	
+	td.sectionTableMobile { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 55%; 
+	}
+	
+	td.sectionTableMobile:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 0px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+	
+	/*
+	Label the data
+	*/
+	td.sectionTableMobile:nth-of-type(1):before { content: "";}
+	td.sectionTableMobile:nth-of-type(2):before { content: "Course"; }
+	td.sectionTableMobile:nth-of-type(3):before { content: "Section"; }
+	td.sectionTableMobile:nth-of-type(4):before { content: "First Name"; }
+	td.sectionTableMobile:nth-of-type(5):before { content: "Last Name"; }
+	td.sectionTableMobile:nth-of-type(6):before { content: "Lec. ID"; }
+	td.sectionTableMobile:nth-of-type(7):before { content: "Flow ID"; }
+
+}
+
+#startDisc {width: 40%; text-align: left; margin-left: 5%;}
+#search-input {width: 50%;}
+.full-text {display: inline;}
+.short-text {display: none;}
+
+div.remContainer {
+  width: 30%; 
+  margin-left: 3% ;
+}
+
+
+/* Flow Table */
+
+thead.MuiTableHead-root.flow{
+  display: none;
+}
+tr.MuiTableRow-root.flow.MuiTableRow-head{
+  display: none;
+}
+th.MuiTableCell-root.MuiTableCell-head.flow{
+  display: none;
+}
+
+ /* End of Flow Table */
+ span.short-text{
+  display: none;
+}
+span.full-text{
+  display: inline;
+}
+
+  @media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+span.short-text{
+  display: inline;
+}
+span.full-text{
+  display: none;
+}
+
+/* Flows Table */
+
+div.MuiPaper-root.flows.MuiPaper-elevation1.MuiPaper-rounded{
+  width: 300%;
+}
+
+th.MuiTableCell-root.MuiTableCell-head.flows{
+  font-size: large;
+}
+
+thead.MuiTableHead-root.flow{
+  display: table-header-group;
+}
+tr.MuiTableRow-root.flow.MuiTableRow-head{
+  display: table-row;
+}
+th.MuiTableCell-root.MuiTableCell-head.flow{
+  display: table-cell;
+}
+
+
+
+tr.flowTable, th.flowTable, td.flowTable { 
+  height: auto; 
+  
+}
+tr.flowTable{
+  width: 100%;
+}
+td.flowTable{
+  width: 100%;
+}
+/* Force table to not be like tables anymore */
+table.flowTable, thead.flowTable, tbody.flowTable, th.flowTable, td.flowTable, 
+tr.flowTable { 
+  display: block; 
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+thead.flowTable tr.flowTable { 
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+tr.flowTable { border: 1px solid #ccc; }
+
+td.flowTable { 
+  /* Behave  like a "row" */
+  border: none;
+  border-bottom: 1px solid #eee; 
+  position: relative;
+  padding-left: 45%; 
+}
+
+td.flowTable:before { 
+  /* Now like a table header */
+  position: absolute;
+  /* Top/left values mimic padding */
+  top: 0px;
+  left: 6px;
+  width: 45%; 
+  padding-right: 10px;  
+  white-space: nowrap;
+}
+
+/*
+Label the data
+*/
+td.flowTable:nth-of-type(1):before { content: ""; }
+td.flowTable:nth-of-type(2):before { content: "Flow ID"; }
+td.flowTable:nth-of-type(3):before { content: "Speciality ID"; }
+td.flowTable:nth-of-type(4):before { content: "Speciality"; }
+td.flowTable:nth-of-type(5):before { content: "Start Date"; }
+td.flowTable:nth-of-type(6):before { content: "Days"; }
+
+
+
+
+
+
+tr.flowSchedTable, th.flowSchedTable, td.flowSchedTable { 
+  height: auto; 
+  
+}
+tr.flowSchedTable{
+  width: 100%;
+}
+td.flowSchedTable{
+  width: 100%;
+}
+/* Force table to not be like tables anymore */
+table.flowSchedTable, thead.flowSchedTable, tbody.flowSchedTable, th.flowSchedTable, td.flowSchedTable, 
+tr.flowSchedTable { 
+  display: block; 
+}
+
+/* Hide table headers (but not display: none;, for accessibility) */
+thead.flowSchedTable tr.flowSchedTable { 
+  position: absolute;
+  top: -9999px;
+  left: -9999px;
+}
+
+tr.flowSchedTable { border: 1px solid #ccc; }
+
+td.flowSchedTable { 
+  /* Behave  like a "row" */
+  border: none;
+  border-bottom: 1px solid #eee; 
+  position: relative;
+  padding-left: 45%; 
+}
+
+td.flowSchedTable:before { 
+  /* Now like a table header */
+  position: absolute;
+  /* Top/left values mimic padding */
+  top: 0px;
+  left: 6px;
+  width: 45%; 
+  padding-right: 10px;  
+  white-space: nowrap;
+}
+
+/*
+Label the data
+*/
+td.flowSchedTable:nth-of-type(1):before { content: ""; }
+td.flowSchedTable:nth-of-type(2):before { content: "Course ID"; }
+td.flowSchedTable:nth-of-type(3):before { content: "Lesson"; }
+td.flowSchedTable:nth-of-type(4):before { content: "Course"; }
+td.flowSchedTable:nth-of-type(5):before { content: "Date"; }
+
+
+
+
+
+
+
+/* End of Flows Table */
+
+  /* User Manager Table */
+
+  th.MuiTableCell-root.MuiTableCell-head.full-text{
+    display: none;
+    padding: 0
+  }
+  td.MuiTableCell-root.MuiTableCell-body.full-text{
+    display: none;
+    padding: 0
+  }
+  td.MuiTableCell-root.MuiTableCell-body.userM, th.MuiTableCell-root.MuiTableCell-head.userM{
+    padding: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+  }
+  span.userM {
+    margin-right: 10px;
+  }
+
+  div.userManWrapper{
+    overflow-y: scroll;
+    max-height: 500px;
+  }
+
+  div.modal-body.userManager{
+    padding: 0;
+  }
+
+  div.card-body.bg-light.m-1.userManager{
+    padding: 0;
+  }
+
+  /* End of User Manager Table */
+
+
+  div#attendanceTable{
+    width: 80%;
+  }
+  
+  #startDisc {width: 80%; text-align: left;}
+
+  #search-input {width: 100%}
+
+  .full-text {display: none;}
+  .short-text {display: inline;} 
+
+  div.remContainer {
+    width: 90%; 
+    margin-left: 3% ;
+  }
+}
+
+.calendar-container,
+.calendar,
+.calendar-header,
+td.calendar-container,
+tr.calendar-container {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+}
+
+.calendar-container {
+  border: 2px solid skyblue;
+  width: 90%;
+  margin-left: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.calendar {
+  background-color: white;
+  border-spacing: 0;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.calendar-header {
+  border-bottom: 1px dashed skyblue;
+  font-size: 1.6em;
+}
+
+.calendar-header td {
+  border-spacing: 0;
+  padding-left: 5px;  
+}
+
+.day,
+.empty-slot,
+.week-day{
+  text-align: center;
+  height: 40px;
+}
+
+.week-day {
+  font-size: 0.8em;
+}
+
+.day {
+  font-size: 0.8em;
+}
+
+.day {
+  cursor: pointer;
+  width: 24px;
+  height: 24px;
+  line-height: 20px;
+}
+
+.current-day {
+  background-color: #4285f4;
+  width: 28px;
+  height: 28px;
+  line-height: 20px;
+  /* border-radius: 28px; */
+  color: white;
+}
+
+.month-popup {
+  position: absolute;
+  padding: 5px;
+  background: white;
+  border: 2px solid skyblue;
+}
+
+.month-popup div {
+  padding: 0.3em;
+}
+
+.nav-month {
+  position: relative;
+  top: 13%;
+  font-size: 0.7em;
+  
+}
+
+/* .prev{
+}
+
+.next{
+} */
+
+.editor-year{
+  max-width: 3.6em;
+  font-size: 0.6em;
+}
+
+.label-month,
+.label-year {
+  font-size: 0.6em;
+}
+
+.label-month {
+  cursor: pointer;
+}
+
+
+
+p#remList {
+  text-align: left;
+  margin-left: 10%;
+  margin-bottom: 10px
+}
+
+button.btn.btn-outline-primary.mr-3.remList{
+  color: black;
+  margin-left: 10%;
+  margin-bottom: 10px
+}
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+  th.MuiTableCell-root.MuiTableCell-head.specManTable{
+    padding:0;
+    padding-top: 2%;
+    padding-bottom: 2%;
+
+  }
+  th#specManTableCol1.MuiTableCell-root.MuiTableCell-head.specManTable{
+    padding-left: 4%;
+    width: 60%;
+  }
+  
+  div#specMan.card-body.bg-light.m-1{
+    padding:0;
+  }
+  
+  
+  p#remList {
+    text-align: left;
+    margin-left: 5%;
+    margin-bottom: 10px
+  }
+
+  button.btn.btn-outline-primary.mr-3.remList{
+    color: black;
+    margin-left: 5%;
+    margin-bottom: 10px
+  }
+  .calendar-container {
+    border: 2px solid skyblue;
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 25%;
+    margin-bottom: 5%;
+    font-size: small;
+    
+  }
+  #calSecFlow{
+    display: none;
+  }
+  
+  .day {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    line-height: 18px;
+  }
+  
+  .current-day {
+    background-color: #4285f4;
+    width: 28px;
+    height: 28px;
+    line-height: 18px;
+    /* border-radius: 28px; */
+    color: white;
+  }
+
+}

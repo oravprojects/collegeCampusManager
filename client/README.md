@@ -1,0 +1,1 @@
+# This project was designed to be used by a college or school for the management of staff, majors, courses, academic calendars, records, and user profiles. 
