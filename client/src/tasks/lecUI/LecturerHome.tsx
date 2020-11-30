@@ -95,7 +95,7 @@ export class LecturerHome extends Component {
 
     updateList = () => {
         if (localStorage.getItem("userRole") !== "lecturer") {
-            alert('This is a demo version. You do have permission to update reminders.');
+            alert('This is a demo version. You do not have permission to update reminders.');
             return;
         }
         var newRequest = [];
@@ -158,7 +158,7 @@ export class LecturerHome extends Component {
 
     deleteRem = () => {
         if (localStorage.getItem("userRole") !== "lecturer") {
-            alert('This is a demo version. You do have permission to update reminders.');
+            alert('This is a demo version. You do not have permission to update reminders.');
             return;
         }
         var request = [];
@@ -205,7 +205,7 @@ export class LecturerHome extends Component {
 
     setReminder = () => {
         if (localStorage.getItem("userRole") !== "lecturer") {
-            alert('This is a demo version. You do have permission to update reminders.');
+            alert('This is a demo version. You do not have permission to update reminders.');
             return;
         }
         if (new Date(reminderDate).getFullYear() === 9999) {

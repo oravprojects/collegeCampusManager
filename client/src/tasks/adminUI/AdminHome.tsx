@@ -93,7 +93,7 @@ export class AdminHome extends Component {
 
     updateList = () => {
         if(localStorage.getItem("userRole") !== "admin"){
-            alert('This is a demo version. You do have permission to update reminders.');
+            alert('This is a demo version. You do not have permission to update reminders.');
             return;
         }
         var newRequest = [];
@@ -141,7 +141,7 @@ export class AdminHome extends Component {
 
     deleteRem = () => {
         if(localStorage.getItem("userRole") !== "admin"){
-            alert('This is a demo version. You do have permission to update reminders.');
+            alert('This is a demo version. You do not have permission to update reminders.');
             return;
         }
         var request = [];
@@ -188,7 +188,7 @@ export class AdminHome extends Component {
 
     setReminder = () => {
         if(localStorage.getItem("userRole") !== "admin"){
-            alert('This is a demo version. You do have permission to update reminders.');
+            alert('This is a demo version. You do not have permission to update reminders.');
             return;
         }
 
