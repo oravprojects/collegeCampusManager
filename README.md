@@ -7,7 +7,7 @@ Lecturers can use the system to view their academic schedules, post announcement
 
 Students can use the system to view their class schedules and academic records, including grades and attendance, as well as view and submit assignments and communicate with lecturers, administrators, and fellow students through the chat and forum. 
 
-A demo version of the project is available at https://confident-pike-54465f.netlify.app
+A demo version of the project is available at https://stellular-churros-7473a3.netlify.app
 
 Student Demo 
 username: student@mail.com
